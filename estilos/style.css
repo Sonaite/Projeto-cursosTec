@@ -1,0 +1,568 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*configuração para celulares: modelo mobile first*/
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+
+html, body{
+    background-color: #0808088a;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+   
+  
+
+
+header{
+    background-color: rgba(2, 29, 2, 0.973);
+
+}
+header h1{
+    padding: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 5px 8px black;
+    font-family: 'Times New Roman', Times, serif;
+     
+}
+
+span{
+   color: white;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   
+  
+}
+span#burguer:hover{
+    background-color: rgba(255, 255, 255, 0.527);
+    cursor: pointer;
+
+
+
+}
+menu{
+    text-align: center;
+    display: none;
+}
+menu > ul > li> a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.089);
+}
+menu > ul > li> a:hover{
+    background-color: rgba(3, 65, 3, 0.411);
+}
+header h1{
+    text-shadow: 3px 3px 3px black;
+}
+
+
+main{
+    width: 100vw;
+    background-color: rgba(4, 68, 14, 0.459);
+   
+}
+section#img p{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 2em;
+    padding-top: 60px;
+    color: rgb(232, 236, 234);
+    font-weight: 800;
+   
+    background-color: rgba(0, 0, 0, 0.541);
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+  
+  
+}
+section.texto{
+   
+    text-align: center;
+    margin-bottom: 10px;
+  
+    background-color: rgb(20, 37, 27);
+    color: rgb(188, 212, 188);
+    font-family: "Chakra Petch", sans-serif;
+   
+}
+section.texto p {
+    max-width: 500px; /* define largura do texto */
+    margin: auto;     /* centraliza */
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-top: 5px;
+    
+}
+
+
+section.imagem{
+    margin-top: 1px;
+    height: 300px;
+ 
+   
+}
+
+
+    section#img{
+        background-repeat: no-repeat;
+        background-image: url(../imagens/woman-5653501_1280.jpg);
+        background-size:cover;
+        background-position: right top;
+        background-attachment: scroll;
+        height: 300px;
+        position: relative;
+    }
+    section#cursos {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+      
+        padding: 10px;
+        justify-items: center; 
+    }
+    
+    section#cursos button{
+        
+        margin-top: 10px ;
+        margin-bottom: 6px;
+      
+        background-color:  rgba(20, 37, 27, 0.87);
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+        width: 180px;
+      
+        border: 1px solid blue;
+        border-radius: 20px 5px 20px 5px;
+
+    }
+    .curso p{
+      display: none;
+    }
+    /*cores dos nomes dos botoes*/
+    section#cursos button.um{
+        color: rgb(199, 250, 13);
+
+    }
+    section#cursos button.dois{
+        color: blueviolet;
+    }
+    section#cursos button.trez{
+        color: pink;
+    }
+    section#cursos button.qua{
+        color: rgb(20, 238, 20);
+    }
+
+    .link-curso {
+        max-height: 0;
+  overflow: hidden;
+  display: block;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0;
+  opacity: 0;
+  color: white;
+  text-decoration: none;
+      
+      }
+      .link-curso.show {
+        max-height: 40px; /* altura suficiente para o link aparecer */
+        padding: 5px 0;
+        opacity: 1;
+      }
+      iframe{
+        display: block;
+        margin: auto;
+        max-width: 90vw;
+        height: 182px;
+      }
+
+    section#grates h2{
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.692);
+        font-family: "Chakra Petch", sans-serif;
+    }
+    section#grates p{
+        color: white;
+        text-align: center;
+    }
+    section#grates a{
+        color: rgb(32, 192, 46);
+        text-decoration: none;
+        background-color: rgba(20, 3, 3, 0.719);
+        padding: 10px;
+        display: block;
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        font-size: 1.em;
+
+    }
+    section#planos{
+      margin-top: 20px;
+      background-color:#FFD700;
+      margin-bottom: 10px;
+
+    }
+    section#planos h2{
+      text-align: center;
+      font-family: "Inter", sans-serif;
+    }
+
+   
+    .pesquisa label{
+      color: rgba(255, 255, 255, 0.521);
+     display: block;
+     margin-bottom: 8px;
+    }
+    .pesquisa input{
+      background-color: #110f007c;
+      height: 1px;
+      width: 90vw;
+      color: rgba(255, 255, 255, 0.418);
+      
+    }
+
+    
+
+    .caixas-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+      padding: 10px 0;
+    }
+
+    /* Esconde a barra no Chrome */
+.caixas-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.caixas-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+  
+    
+    .caixas {
+      box-shadow: 3px 3px 3px black;
+      border: 1px solid rgba(145, 218, 96, 0.185);
+      width: 80vw;
+      height: 450px;
+      margin: auto;
+      background-color: rgba(70, 71, 64, 0.637);
+      border-radius: 10px;
+      overflow: hidden;
+
+       /* Aqui vem o Flex */
+       flex: 0 0 80vw; /* Fixa o tamanho e permite rolagem lateral */
+       margin: 0; 
+      
+       scroll-snap-align: start; /* alinha ao rolar */
+flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+
+    }
+    
+    .imagem-fundo {
+      height: 160px; /* altura desejada da imagem */
+      background-image: url(../imagens/java.webp); /* troque pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: center;
+    }
+    .imagem-fundo#phyton{
+      background-image: url(../imagens/pyt.png);
+    }
+    
+   .caixas p.tipo {
+      font-size: 0.7em;
+      text-align: center;
+      color: rgb(0, 66, 128);
+      background-color: rgba(10, 168, 216, 0.479);
+      border-radius: 0px 10px;
+      display: inline-block;
+      padding: 5px;
+    
+      
+    }
+    .caixas p.tipo#pro {
+      font-size: 0.5em;
+      text-align: center;
+      color: rgb(0, 66, 128);
+      background-color: rgba(10, 168, 216, 0.479);
+      border-radius: 0px 10px;
+      display: inline-block;
+      padding: 5px;
+    
+    }
+ 
+    .conteudo {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+    }
+    
+    
+    .caixas p.normal {
+       
+      color: rgb(247, 243, 243);
+      text-align: center;
+      padding-bottom: 10px;
+      font-family: "Inter", sans-serif;
+      padding-top: 30px;
+      
+    }
+    .caixas a{
+      font-family: "Inter", sans-serif;
+      color: black;
+      text-decoration: none;
+      background-color: rgb(229, 255, 0);
+      display: block;
+   
+      text-align: center ;
+      padding: 10px;
+      height: 100%;
+      margin-top:60px;
+      width: 100%;
+   
+    }
+
+    /*------------------------*/
+    #contato {
+      background-color: rgba(1, 29, 1, 0.9);
+      color: white;
+      padding: 20px;
+      font-family: "Chakra Petch", sans-serif;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    #contato h2 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: rgb(206, 255, 177);
+      text-decoration: underline;
+
+    }
+    
+    #formulario {
+      display: none;
+      margin-top: 20px;
+ 
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: rgba(0, 0, 0, 0.507);
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 50%;
+      transform: translate(-50%);
+      margin-bottom: 20px;
+      
+  
+    
+    
+    }
+     button:hover {
+      background-color: #e0c200;
+    }
+/*------------------------------------------------*/    
+
+    #sobre-mim{
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center;     /* Alinha verticalmente */
+      gap: 40px;               /* Espaço entre imagem e texto */
+      padding: 30px;
+      flex-wrap: wrap;         /* Caso a tela fique pequena */
+      background-color: #110f00f1;
+    
+    }
+    #nome{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #sobre-mim {
+      display: flex;
+    
+      justify-content: flex-start; /* alinha o conteúdo à esquerda */
+      margin-left: 0; /* garante que não tenha espaçamento lateral */
+      
+      
+     
+    }
+   
+    
+   
+  
+    .foto-nome {
+      display: flex;
+      flex-direction: column; /* deixa imagem em cima e nome embaixo */
+      align-items: center;     /* centraliza tudo horizontalmente */
+     
+    
+     
+    }
+    .foto-nome img{
+      width: 100px;
+      border-radius: 50%;
+      
+      
+    }
+    
+    #sobre-mim p{
+      
+     
+    
+     text-align: justify;
+     text-indent: 20px;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     
+    
+    }
+    .descricao{
+      width: 500px;
+      
+    }
+   
+    footer{
+     background-color: #031d02;
+     color: white;
+     text-align: center;
+     padding: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+  
+    }
+
+    /*-------------------------------------------------*/
+   
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    /* Animação de entrada deslizante */
+@keyframes slideIn {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .curso {
+    opacity: 0; /* Inicialmente invisível */
+    animation: slideIn 0.8s ease forwards;
+  }
+  
+  /* Para dar um delay entre eles */
+  .curso:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .curso:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .curso:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .curso:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .curso:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .curso:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .curso:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  .curso:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+
+  /*bulsar valor*/
+  .pulsando {
+    animation: batimento 1.5s  ease-in-out 4;
+    display: inline-block;
+  }
+  
+  @keyframes batimento {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  
+      
+
+
+
